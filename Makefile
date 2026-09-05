@@ -1,7 +1,7 @@
-test-mini: test-mini.c mini.c
-	gcc test-mini.c mini.c -Wall -o test-mini
+test-mini: test.c mini.c
+	gcc test.c mini.c -Wall -o test-mini
 
-test-mini2: test-mini2.c mini_mod.S
+test-mini2: test.c mini_mod.S
 	gcc -Wall test.c mini_mod.S -o test-mini2
 
 calc: calc.c mystery.S
