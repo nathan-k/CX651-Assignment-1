@@ -23,19 +23,22 @@ int test_sort2() {
 }
 
 int test_branch() {
-    unsigned long long x = sort(120);
-    unsigned long long y = sort(-120);
-    unsigned long long z = sort(3);
+    unsigned long long x = branch(11, 10);
+    unsigned long long y = branch(4,5);
+    unsigned long long z = branch(1,1);
 
-    return x == 11 && y == 17 && z == 17;
+     printf("%llu %llu %llu\n", x,y,z);
+    return x == 1 && y == 12 && z == 33;
 }
 
 int test_loop() {
-    unsigned long long x = sort(120);
-    unsigned long long y = sort(-120);
-    unsigned long long z = sort(3);
+    unsigned long long x = loop(3,2);
+    unsigned long long y = loop(5,10);
+    unsigned long long z = loop(3,5);
 
-    return x == 11 && y == 17 && z == 17;
+    printf("%llu %llu %llu\n", x,y,z);
+
+    return x == 8 && y == 130 && z == 26;
 }
 
 int run_test(char * test_name, int (*test_func)()) {
