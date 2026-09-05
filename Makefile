@@ -1,3 +1,5 @@
+all: calc test-mini test-mini2 caller
+
 test-mini: test.c mini.c
 	gcc test.c mini.c -Wall -o test-mini
 
@@ -9,8 +11,6 @@ calc: calc.c mystery.S
 
 caller: caller.c
 	gcc caller.c -Wall -o caller
-
-all: calc test-mini test-mini2 caller
 
 # TODO: complete makefile rules for calc, test-mini, test-mini2, caller.
 
