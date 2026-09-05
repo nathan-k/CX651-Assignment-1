@@ -1,5 +1,4 @@
-(1) write(1, "hello STDOUT\n", 13hello STDOUT
-)          = 13
+(1) write(1, "hello STDOUT\n", 13hello STDOUT) = 13
 write(2, "ERROR: this is an error", 23ERROR: this is an error) = 23
 
 (2) exit_group(0) - exits all threads in the process
