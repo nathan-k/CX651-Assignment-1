@@ -28,12 +28,10 @@ int calc(op* ops, int op_len) {
         if (type == '?') {
             val += mystery(a, b);
         } else if (type == '+') {
-            val += a + b;
+            val += (a + b);
         } else if (type == '-') {
             val += (a - b);
         }
-        
-        ops++;
     }
 
     return val;
