@@ -38,10 +38,11 @@ unsigned long long branch(long long x, long long y) {
     For example loop(3,2) = 3*2 + 2*1 = 8.
 */
 int loop(int x, int y) {
-    int sum;
+    int sum = 0;
 
     while (x > 0 && y > 0) {
-        sum += x * y;
+        sum += (x * y);
+        printf("SUM: %d\n", sum);
         x--;
         y--;
     }
