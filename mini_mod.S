@@ -4,7 +4,7 @@
 	.globl	sort
 	.type	sort, @function
 sort:
-	cmp	rdi, 5
+	cmp	rdi, 4
 	mov	edx, 17
 	mov	eax, 11
 	cmovle	rax, rdx
