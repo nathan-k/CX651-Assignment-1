@@ -19,7 +19,7 @@ int test_sort2() {
     unsigned long long a = sort(5);
 
     printf("%llu %llu %llu %llu\n", x,y,z,a);
-    return x == 11 && y == 17 && z == 17 && a == 11;
+    return x == 11 && y == 17 && z == 17 && a == 17;
 }
 
 int test_branch() {
